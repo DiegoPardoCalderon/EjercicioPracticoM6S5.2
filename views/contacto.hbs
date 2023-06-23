@@ -1,0 +1,46 @@
+{{> header}}
+
+        <div>
+            <section id="comuniquemonos">
+                    <form action="" method="post">
+                        <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Maria Vargas">
+                    </form>
+                <br>
+                <div>
+                    <form action="correo">
+                      <label for="correo">Correo</label> 
+                            <input type="email" name="correo" placeholder="mariavargas@correo.com">
+                    </form>
+                </div>
+                <br>
+                <div>
+                    <form action="telefono">
+                        <label for="telefono">Telefono</label>
+                        <input type="telefono" name="telefono" placeholder="xxxxxxxxx">
+                    </form>
+                </div>
+                <br>
+                <div>
+                    <label for="">Motivo</label>
+                        <input type="text" name="lista" list="motivo">
+                        <datalist id="motivo">
+                            <option value="Felicitaciones"></option>
+                            <option value="Reclamos"></option>
+                            <option value="Consultas"></option>
+                            <option value="Sugerencias"></option>
+                        </datalist>
+                        
+                </div>
+                    <label for="motivo"></label> <br> <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
+
+                <br><br>
+                
+                <div>
+                    <form action="">
+                         <input type="submit" value="Enviar">
+                    </form>
+            </section>
+         </div>
+
+{{> footer}}
